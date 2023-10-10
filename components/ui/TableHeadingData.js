@@ -1,0 +1,5 @@
+const TableHeadingData = () => {
+    return(
+
+    )
+}

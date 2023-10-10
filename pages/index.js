@@ -1,82 +1,141 @@
-import Head from 'next/head'
+import Link from 'next/link'
 
-export default function Home() {
+import { getAllInsights } from '../lib/api'
+import Layout from '../components/layout/Layout'
+import Practices from '../components/PracticesSection'
+import CTA from '../components/CTA'
+import Insight from '../components/InsightSection'
+import CompanyBackground from '../components/CompanyBackground'
+import BorderlessSolution from '../components/BorderlessSolution'
+
+export default function Home({ allInsights }) {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
-
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">
-            pages/index.js
-          </code>
-        </p>
-
-        <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+    <div>
+      <CompanyBackground showMore={false} />
+      <Practices />
+      <CTA />
+      <BorderlessSolution />
+      <section className='pt-12 pb-24'>
+        <div className='container'>
+          <div className='row'>
+            <div className='col-12'>
+              <div className='pb-12 flex items-center justify-between font-playfair'>
+                <div className='flex items-center'>
+                  <span className='dash-line'></span>
+                  <h2 className='text-base md:text-xl uppercase'>insights</h2>
+                </div>
+                <Link href='/insights' passHref>
+                  <a className='text-accents_6 text-xs md:text-base hover:text-primary'>
+                    Discover more
+                  </a>
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className='row'>
+            {allInsights.map((insight, index) => {
+              if (index < 3) {
+                return (
+                  <Insight
+                    image={insight.acf.image.url}
+                    datePublished={insight.modified}
+                    title={insight.title.rendered}
+                    description={insight.acf.description}
+                    slug={insight.slug}
+                    key={insight.id}
+                  />
+                )
+              }
+            })}
+          </div>
         </div>
-      </main>
-
-      <footer className="flex items-center justify-center w-full h-24 border-t">
-        <a
-          className="flex items-center justify-center"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
-        </a>
-      </footer>
+      </section>
     </div>
+  )
+}
+
+export async function getStaticProps({ params }) {
+  const allInsights = await getAllInsights()
+  return {
+    props: {
+      allInsights,
+    },
+    // Next.js will attempt to re-generate the page:
+    // - When a request comes in
+    // - At most once every 10 seconds
+    //revalidate: 10, // In seconds
+  }
+}
+
+Home.getLayout = function getLayout(page) {
+  return (
+    <Layout
+      title='Masnad Law Firm - A Full Service Law Firm'
+      page='home'
+      canonical='https://masnad.af/'
+      pageDescription='Masnad Law Firm (MLF) is a local law firm distinguished from other Afghan legal institutions by its close relationship with lawyers from more than 100 countries on all continents of the globe.'
+      jsonLD='{
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://masnad.af/#website",
+            "url": "https://masnad.af/",
+            "name": "Masnad Law Firm",
+            "description": "A Full-Service Law Firm Based in Kabul, Afghanistan",
+            "publisher": { "@id": "https://masnad.af/#organization" }
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://masnad.af/#organization",
+            "name": "Masnad Law Firm",
+            "url": "https://masnad.af/",
+            "logo": "https://masnad.af/img/masnad-logo.png"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://masnad.af/#breadcrumblist",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "@id": "https://masnad.af#about/#listItem",
+                "position": 1,
+                "item": {
+                  "@type": "WebPage",
+                  "@id": "https://masnad.af#about/#item",
+                  "name": "About",
+                  "description": "Masnad Law Firm (MLF) is not a simple legal firm, but an experienced family composed of numerous well known and prestigious professionals in every legal domain and practice area.",
+                  "url": "https://masnad.af#about"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "@id": "https://masnad.af#contact/#listItem",
+                "position": 2,
+                "item": {
+                  "@type": "WebPage",
+                  "@id": "https://masnad.af#contact/#item",
+                  "name": "Contact",
+                  "description": "Contact us. Ansori Street, Shahri Now, District 10, Kabul, Afghanistan | +93 730 830 830. info@masnad.af",
+                  "url": "https://masnad.af#contact"
+                }
+              }
+            ]
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://masnad.af/#webpage",
+            "url": "https://masnad.af/",
+            "name": "Masnad Law Firm",
+            "description": "Masnad Law Firm (MLF) is a local law firm distinguished from other Afghan legal institutions by its close relationship with lawyers from more than 100 countries on all continents of the globe.",
+            "inLanguage": "en-US",
+            "isPartOf": { "@id": "https://masnad.af/#website" },
+            "breadcrumb": { "@id": "https://masnad.af/#breadcrumblist" }
+          }
+        ]
+      }'
+    >
+      {page}
+    </Layout>
   )
 }
