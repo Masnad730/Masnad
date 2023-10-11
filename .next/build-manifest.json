@@ -1,0 +1,155 @@
+{
+  "polyfillFiles": [
+    "static/chunks/polyfills-5cd94c89d3acac5f.js"
+  ],
+  "devFiles": [],
+  "ampDevFiles": [],
+  "lowPriorityFiles": [
+    "static/J2DHmvDKFWhnfeQSHxRo5/_buildManifest.js",
+    "static/J2DHmvDKFWhnfeQSHxRo5/_ssgManifest.js",
+    "static/J2DHmvDKFWhnfeQSHxRo5/_middlewareManifest.js"
+  ],
+  "pages": {
+    "/": [
+      "static/chunks/webpack-df4cf1c8d23aa877.js",
+      "static/chunks/framework-5f4595e5518b5600.js",
+      "static/chunks/main-f635b472c367d1c7.js",
+      "static/chunks/118-f491fcf1ac1ac6d4.js",
+      "static/chunks/190-2194f9fa0c578095.js",
+      "static/chunks/318-52983a813e70bd00.js",
+      "static/chunks/925-28fbd92b1272dd26.js",
+      "static/chunks/pages/index-7a8b13ef32b05640.js"
+    ],
+    "/_app": [
+      "static/chunks/webpack-df4cf1c8d23aa877.js",
+      "static/chunks/framework-5f4595e5518b5600.js",
+      "static/chunks/main-f635b472c367d1c7.js",
+      "static/css/661647fcf73ec666.css",
+      "static/chunks/pages/_app-701a0b08b926e198.js"
+    ],
+    "/_error": [
+      "static/chunks/webpack-df4cf1c8d23aa877.js",
+      "static/chunks/framework-5f4595e5518b5600.js",
+      "static/chunks/main-f635b472c367d1c7.js",
+      "static/chunks/pages/_error-2280fa386d040b66.js"
+    ],
+    "/about": [
+      "static/chunks/webpack-df4cf1c8d23aa877.js",
+      "static/chunks/framework-5f4595e5518b5600.js",
+      "static/chunks/main-f635b472c367d1c7.js",
+      "static/chunks/118-f491fcf1ac1ac6d4.js",
+      "static/chunks/318-52983a813e70bd00.js",
+      "static/chunks/925-28fbd92b1272dd26.js",
+      "static/chunks/pages/about-73fb8d0c5c48fe48.js"
+    ],
+    "/accreditation-recognitions": [
+      "static/chunks/webpack-df4cf1c8d23aa877.js",
+      "static/chunks/framework-5f4595e5518b5600.js",
+      "static/chunks/main-f635b472c367d1c7.js",
+      "static/chunks/118-f491fcf1ac1ac6d4.js",
+      "static/chunks/282-6c4d2f20e5ac3c1a.js",
+      "static/chunks/318-52983a813e70bd00.js",
+      "static/chunks/pages/accreditation-recognitions-13e1a848b1ba3c39.js"
+    ],
+    "/afghanistan-laws-regulations": [
+      "static/chunks/webpack-df4cf1c8d23aa877.js",
+      "static/chunks/framework-5f4595e5518b5600.js",
+      "static/chunks/main-f635b472c367d1c7.js",
+      "static/chunks/118-f491fcf1ac1ac6d4.js",
+      "static/chunks/190-2194f9fa0c578095.js",
+      "static/chunks/318-52983a813e70bd00.js",
+      "static/chunks/pages/afghanistan-laws-regulations-44be95df253c7ae2.js"
+    ],
+    "/contact": [
+      "static/chunks/webpack-df4cf1c8d23aa877.js",
+      "static/chunks/framework-5f4595e5518b5600.js",
+      "static/chunks/main-f635b472c367d1c7.js",
+      "static/chunks/118-f491fcf1ac1ac6d4.js",
+      "static/chunks/318-52983a813e70bd00.js",
+      "static/chunks/pages/contact-c1e32bf62452e97a.js"
+    ],
+    "/doing-business-in-afghanistan": [
+      "static/chunks/webpack-df4cf1c8d23aa877.js",
+      "static/chunks/framework-5f4595e5518b5600.js",
+      "static/chunks/main-f635b472c367d1c7.js",
+      "static/chunks/118-f491fcf1ac1ac6d4.js",
+      "static/chunks/318-52983a813e70bd00.js",
+      "static/chunks/pages/doing-business-in-afghanistan-114aa6bb189cd1b7.js"
+    ],
+    "/insights": [
+      "static/chunks/webpack-df4cf1c8d23aa877.js",
+      "static/chunks/framework-5f4595e5518b5600.js",
+      "static/chunks/main-f635b472c367d1c7.js",
+      "static/chunks/118-f491fcf1ac1ac6d4.js",
+      "static/chunks/190-2194f9fa0c578095.js",
+      "static/chunks/318-52983a813e70bd00.js",
+      "static/chunks/pages/insights-06f2c88e23b2cd20.js"
+    ],
+    "/insights/[slug]": [
+      "static/chunks/webpack-df4cf1c8d23aa877.js",
+      "static/chunks/framework-5f4595e5518b5600.js",
+      "static/chunks/main-f635b472c367d1c7.js",
+      "static/chunks/118-f491fcf1ac1ac6d4.js",
+      "static/chunks/190-2194f9fa0c578095.js",
+      "static/chunks/318-52983a813e70bd00.js",
+      "static/chunks/pages/insights/[slug]-83ff3f5447814e3f.js"
+    ],
+    "/legal-books-papers": [
+      "static/chunks/webpack-df4cf1c8d23aa877.js",
+      "static/chunks/framework-5f4595e5518b5600.js",
+      "static/chunks/main-f635b472c367d1c7.js",
+      "static/chunks/118-f491fcf1ac1ac6d4.js",
+      "static/chunks/318-52983a813e70bd00.js",
+      "static/chunks/pages/legal-books-papers-da79d2c34e855e61.js"
+    ],
+    "/legal-documents-templates": [
+      "static/chunks/webpack-df4cf1c8d23aa877.js",
+      "static/chunks/framework-5f4595e5518b5600.js",
+      "static/chunks/main-f635b472c367d1c7.js",
+      "static/chunks/118-f491fcf1ac1ac6d4.js",
+      "static/chunks/318-52983a813e70bd00.js",
+      "static/chunks/pages/legal-documents-templates-8cf1d4343c5667d3.js"
+    ],
+    "/legal-reports": [
+      "static/chunks/webpack-df4cf1c8d23aa877.js",
+      "static/chunks/framework-5f4595e5518b5600.js",
+      "static/chunks/main-f635b472c367d1c7.js",
+      "static/chunks/118-f491fcf1ac1ac6d4.js",
+      "static/chunks/318-52983a813e70bd00.js",
+      "static/chunks/pages/legal-reports-638e0ce640ef5d10.js"
+    ],
+    "/links": [
+      "static/chunks/webpack-df4cf1c8d23aa877.js",
+      "static/chunks/framework-5f4595e5518b5600.js",
+      "static/chunks/main-f635b472c367d1c7.js",
+      "static/chunks/118-f491fcf1ac1ac6d4.js",
+      "static/chunks/318-52983a813e70bd00.js",
+      "static/chunks/pages/links-fa942909bb5a561b.js"
+    ],
+    "/practices": [
+      "static/chunks/webpack-df4cf1c8d23aa877.js",
+      "static/chunks/framework-5f4595e5518b5600.js",
+      "static/chunks/main-f635b472c367d1c7.js",
+      "static/chunks/118-f491fcf1ac1ac6d4.js",
+      "static/chunks/318-52983a813e70bd00.js",
+      "static/chunks/pages/practices-9269ebcf06ed21f2.js"
+    ],
+    "/practices/[slug]": [
+      "static/chunks/webpack-df4cf1c8d23aa877.js",
+      "static/chunks/framework-5f4595e5518b5600.js",
+      "static/chunks/main-f635b472c367d1c7.js",
+      "static/chunks/118-f491fcf1ac1ac6d4.js",
+      "static/chunks/318-52983a813e70bd00.js",
+      "static/chunks/pages/practices/[slug]-f9a737e947cafb54.js"
+    ],
+    "/tax-manuals-guidelines": [
+      "static/chunks/webpack-df4cf1c8d23aa877.js",
+      "static/chunks/framework-5f4595e5518b5600.js",
+      "static/chunks/main-f635b472c367d1c7.js",
+      "static/chunks/118-f491fcf1ac1ac6d4.js",
+      "static/chunks/318-52983a813e70bd00.js",
+      "static/chunks/pages/tax-manuals-guidelines-2565a5719f7d3ea6.js"
+    ]
+  },
+  "ampFirstPages": []
+}

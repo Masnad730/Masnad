@@ -1,0 +1,22 @@
+{
+  "/_app": "pages/_app.js",
+  "/_document": "pages/_document.js",
+  "/about": "pages/about.html",
+  "/accreditation-recognitions": "pages/accreditation-recognitions.html",
+  "/afghanistan-laws-regulations": "pages/afghanistan-laws-regulations.js",
+  "/api/hello": "pages/api/hello.js",
+  "/contact": "pages/contact.html",
+  "/doing-business-in-afghanistan": "pages/doing-business-in-afghanistan.js",
+  "/": "pages/index.js",
+  "/insights/[slug]": "pages/insights/[slug].js",
+  "/insights": "pages/insights.js",
+  "/legal-books-papers": "pages/legal-books-papers.js",
+  "/legal-documents-templates": "pages/legal-documents-templates.js",
+  "/legal-reports": "pages/legal-reports.js",
+  "/links": "pages/links.js",
+  "/practices/[slug]": "pages/practices/[slug].js",
+  "/practices": "pages/practices.js",
+  "/tax-manuals-guidelines": "pages/tax-manuals-guidelines.js",
+  "/_error": "pages/_error.js",
+  "/404": "pages/404.html"
+}
