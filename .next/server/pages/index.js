@@ -378,6 +378,44 @@ function Home({ allInsights  }) {
                 showMore: false
             }),
             /*#__PURE__*/ jsx_runtime_.jsx(PracticesSection, {}),
+            /*#__PURE__*/ jsx_runtime_.jsx("section", {
+                className: "pt-12 pb-20",
+                children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                    className: "container",
+                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        className: "row",
+                        children: [
+                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                className: "col-lg-2",
+                                children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                    children: /*#__PURE__*/ jsx_runtime_.jsx("h2", {
+                                        className: "text-lg md:text-3xl lg:text-[1.97rem] leading-9 pb-2 md:pb-0",
+                                        children: "Legal Clinic"
+                                    })
+                                })
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                className: "col-lg-5",
+                                children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                    children: /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                        className: "text-accents_7 pb-4 md:pb-0",
+                                        children: "As part of our corporate social responsibility, MLF provides free legal advisory services in many areas, including civil, commercial, criminal, and personal status cases to clients who are not able to afford it."
+                                    })
+                                })
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                className: "col-lg-5",
+                                children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                    children: /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                        className: "text-accents_7",
+                                        children: "The legal clinics are directed by our experienced and professional legal team in order to support the community and enhance their legal knowledge."
+                                    })
+                                })
+                            })
+                        ]
+                    })
+                })
+            }),
             /*#__PURE__*/ jsx_runtime_.jsx(CTA/* default */.Z, {}),
             /*#__PURE__*/ jsx_runtime_.jsx(BorderlessSolution/* default */.Z, {}),
             /*#__PURE__*/ jsx_runtime_.jsx("section", {

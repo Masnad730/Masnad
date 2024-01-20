@@ -13,6 +13,36 @@ export default function Home({ allInsights }) {
     <div>
       <CompanyBackground showMore={false} />
       <Practices />
+      <section className='pt-12 pb-20'>
+        <div className='container'>
+          <div className='row'>
+            <div className='col-lg-2'>
+              <div>
+                <h2 className='text-lg md:text-3xl lg:text-[1.97rem] leading-9 pb-2 md:pb-0'>
+                  Legal Clinic
+                </h2>
+              </div>
+            </div>
+            <div className='col-lg-5'>
+              <div>
+                <p className='text-accents_7 pb-4 md:pb-0'>
+                  As part of our corporate social responsibility, MLF provides free legal advisory
+                  services in many areas, including civil, commercial, criminal, and personal status
+                  cases to clients who are not able to afford it.
+                </p>
+              </div>
+            </div>
+            <div className='col-lg-5'>
+              <div>
+                <p className='text-accents_7'>
+                  The legal clinics are directed by our experienced and professional legal team in
+                  order to support the community and enhance their legal knowledge.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <CTA />
       <BorderlessSolution />
       <section className='pt-12 pb-24'>
