@@ -13,31 +13,30 @@ export default function Home({ allInsights }) {
     <div>
       <CompanyBackground showMore={false} />
       <Practices />
-      <section className='pt-12 pb-20'>
+      <section className='pt-6 pb-12'>
         <div className='container'>
-          <div className='row'>
-            <div className='col-lg-2'>
-              <div>
-                <h2 className='text-lg md:text-3xl lg:text-[1.97rem] leading-9 pb-2 md:pb-0'>
-                  Legal Clinic
-                </h2>
+          <div>
+            <div className='row items-center'>
+              <div className='col-md-6 col-lg-6'>
+                <div className='py-20 pl-4 pr-2 md:pr-0 md:pl-12'>
+                  <h2 className='text-xl text-[22px] lg:text-2xl mb-8'>Legal Clinic</h2>
+                  <div className=''>
+                    <p className='pb-3 last:pb-0'>
+                      As part of our corporate social responsibility, MLF provides free legal
+                      advisory services in many areas, including civil, commercial, criminal, and
+                      personal status cases to clients who are not able to afford it.
+                    </p>
+                    <p className='pb-3 last:pb-0'>
+                      The legal clinics are directed by our experienced and professional legal team
+                      in order to support the community and enhance their legal knowledge.
+                    </p>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div className='col-lg-5'>
-              <div>
-                <p className='text-accents_7 pb-4 md:pb-0'>
-                  As part of our corporate social responsibility, MLF provides free legal advisory
-                  services in many areas, including civil, commercial, criminal, and personal status
-                  cases to clients who are not able to afford it.
-                </p>
-              </div>
-            </div>
-            <div className='col-lg-5'>
-              <div>
-                <p className='text-accents_7'>
-                  The legal clinics are directed by our experienced and professional legal team in
-                  order to support the community and enhance their legal knowledge.
-                </p>
+              <div className='col-md-6 col-lg-6 hidden lg:block'>
+                <div className='relative pt-10'>
+                  <img src='/images/legal-clinic.png' className='w-full' alt='Lega Clinix' />
+                </div>
               </div>
             </div>
           </div>
